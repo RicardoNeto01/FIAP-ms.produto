@@ -1,6 +1,6 @@
 package com.github.RicardoNeto01.ms_pedido.entities;
 
-public enum status {
+public enum Status {
 
     REALIZADO,
     AGUARDANDO_PAGAMENTO,
