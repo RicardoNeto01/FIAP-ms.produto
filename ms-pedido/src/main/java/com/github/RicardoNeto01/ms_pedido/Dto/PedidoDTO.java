@@ -1,6 +1,7 @@
 package com.github.RicardoNeto01.ms_pedido.Dto;
 
 import com.github.RicardoNeto01.ms_pedido.entities.ItemDoPedido;
+import com.github.RicardoNeto01.ms_pedido.entities.Pedido;
 import com.github.RicardoNeto01.ms_pedido.entities.Status;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotEmpty;
@@ -27,5 +28,18 @@ public class PedidoDTO {
     private String cpf;
     private LocalDate data;
     private Status status;
-    private List<@Valid ItemDoPedido> itens = new ArrayList<>();
+    private List<@Valid ItemDoPedidoDTO> itens = new ArrayList<>();
+
+    public PedidoDTO(Pedido entity) {
+        id = entity.getId();
+        nome = entity.getNome();
+        cpf = entity.getCpf();
+        data = entity.getData();
+        status = entity.getStatus();
+
+        for (ItemDoPedido item : entity.getItens()){
+            ItemDoPedidoDTO dto = new ItemDoPedidoDTO(item);
+            itens.add(dto);
+        }
+    }
 }
