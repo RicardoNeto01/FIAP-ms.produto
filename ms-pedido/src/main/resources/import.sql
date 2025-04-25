@@ -1,0 +1,1 @@
+INSERT INTO tb_pedido(nome, cpf, data, status) VALUES ('Jon Snow', '12345678901', '2025-04-25', 'REALIZADO')
