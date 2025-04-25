@@ -1,6 +1,6 @@
 package com.github.RicardoNeto01.ms_pedido.Dto;
 
-import com.github.RicardoNeto01.ms_pedido.entities.Status;
+import com.github.RicardoNeto01.ms_pedido.Entities.Status;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

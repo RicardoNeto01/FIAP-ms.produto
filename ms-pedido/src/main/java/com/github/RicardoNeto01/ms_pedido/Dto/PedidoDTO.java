@@ -1,8 +1,8 @@
 package com.github.RicardoNeto01.ms_pedido.Dto;
 
-import com.github.RicardoNeto01.ms_pedido.entities.ItemDoPedido;
-import com.github.RicardoNeto01.ms_pedido.entities.Pedido;
-import com.github.RicardoNeto01.ms_pedido.entities.Status;
+import com.github.RicardoNeto01.ms_pedido.Entities.ItemDoPedido;
+import com.github.RicardoNeto01.ms_pedido.Entities.Pedido;
+import com.github.RicardoNeto01.ms_pedido.Entities.Status;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
