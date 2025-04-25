@@ -23,4 +23,8 @@ public class ItemDoPedido {
     private String descricao;
     private BigDecimal valorUnitario;
 
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "pedido_id")
+    private Pedido pedido;
+
 }
