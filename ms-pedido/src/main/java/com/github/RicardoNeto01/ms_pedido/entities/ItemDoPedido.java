@@ -19,8 +19,11 @@ public class ItemDoPedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(nullable = false)
     private Integer quantidade;
+    @Column(nullable = false)
     private String descricao;
+    @Column(nullable = false)
     private BigDecimal valorUnitario;
 
     @ManyToOne(optional = false)
